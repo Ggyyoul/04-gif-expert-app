@@ -1,21 +1,18 @@
 import { useState } from "react";
-import { AddCategory } from "./components/AddCategory";
+import { AddCategory } from "./components/AddCategory/AddCategory";
+import { GifGrid } from "./components/GifGrid/GifGrid";
 
 export const App = () => {
-  const [categories, setCategories] = useState(["Lilac", "Twice", "BTS", "SevenTeen", 'Stray kids'])
+  const [categories, setCategories] = useState(["Stray kids"]);
 
-  // const handleAdd = ()  => {
-  //   // Tener en cuenta la importancia de las llaves cuadradas para declarar el arreglo
-  //   setCategories( [...categories, 'Monsta X'])
-  // }
   return (
     <>
       <h2>Gif Expert App</h2>
-      <AddCategory />
+      <AddCategory setCategories={setCategories} />
       <hr />
       <ol>
         {categories.map((category) => {
-          return <li key={category}>{category}</li>;
+          return <GifGrid key={category} category={category} />;
         })}
       </ol>
     </>
