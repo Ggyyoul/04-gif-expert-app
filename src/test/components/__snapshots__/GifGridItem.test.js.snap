@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in component <GifGridItem /> should mount the component properly 1`] = `
+<div
+  className="card animate__animated animate__bounce"
+>
+  <img
+    alt="A Title"
+    src="https://localhost/holix.jpg"
+  />
+  <p>
+    A Title
+  </p>
+</div>
+`;
