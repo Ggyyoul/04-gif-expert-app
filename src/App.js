@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { AddCategory } from './components/AddCategory/AddCategory';
 import { GifGrid } from './components/GifGrid/GifGrid';
 
-export const App = () => {
-  const [categories, setCategories] = useState(['Stray kids']);
+export const App = ( {defaultCategories = []}) => {
+  const [categories, setCategories] = useState(defaultCategories);
 
   return (
     <>
