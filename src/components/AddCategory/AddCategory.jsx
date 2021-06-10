@@ -20,6 +20,7 @@ export const AddCategory = ({ setCategories }) => {
 
   return (
     <form onSubmit={handleSubmite}>
+      <p>{inputValue}</p>
       <input
         type="text"
         placeholder="Add Category"
